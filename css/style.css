@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+.header {
+    padding: 20px 70px 20px 32px;
+    display: flex;
+    align-items: center;
+}
+
+.header__button-menu {
+    background-color: #fff;
+    width: 20px;
+    height: 17px;
+    border: none;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 28px;
+    cursor: pointer;
+}
+
+.header__menu-line {
+    width: 20px;
+    height: 3px;
+    display: block;
+    background-color: #1f2022;
+    border-radius: 20px;
+}
+
+.header__search {
+    background-color: #EBEBEB;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 17px;
+    max-width: 830px;
+    width: 50%;
+    margin-left: 59px;
+}
+
+.header__search-input {
+    padding: 12px 23px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #30384C;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+}
+
+.header__search-input:focus {
+    opacity: 1;
+}
+
+.header__search-button {
+    width: 19px;
+    height: 19px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.header__search-icon {
+    fill: #000;
+    width: 19px;
+    height: 19px;
+}
+
+.header__icons {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header__icons-link {
+    text-decoration: none;
+    position: relative;
+}
+
+.header__icons-link:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header__icons .icon {
+    fill: #000;
+    opacity: 0.24;
+    transition: opacity 0.3s;
+}
+
+.header__icons .icon:hover {
+    opacity: 1;
+}
+
+.header__video-icon {
+    width: 27px;
+    height: 20px;
+}
+
+.header__app-icon {
+    width: 21px;
+    height: 21px;
+}
+
+.header__notification-icon {
+    width: 22px;
+    height: 26px;
+}
+
+.header__notification-number {
+    background-color: #FF0000;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+}
+
+.header__user {
+    margin-left: 45px;
+}
+
+.header__user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
